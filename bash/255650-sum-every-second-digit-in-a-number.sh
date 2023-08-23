@@ -1,1 +1,1 @@
-for z in `fold -1`;{((t+=i++%2?z:0));};echo $t
+echo `sed -E s'/(.)([0-9])/\2+/g'`0|bc
