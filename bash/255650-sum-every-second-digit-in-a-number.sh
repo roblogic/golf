@@ -1,1 +1,1 @@
-echo `sed -E s'/(.)([0-9])/\2+/g'`0|bc
+fold -2|cut -c2|paste -sd+|bc
