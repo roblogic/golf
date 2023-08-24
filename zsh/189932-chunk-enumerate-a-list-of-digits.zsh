@@ -1,1 +1,1 @@
-n=1;set $@ $@[#];for i;echo $[$2==$1?n:n++]&&shift
+n=1;>$1;for i {mv * $i&&((n++));<<<$n}
