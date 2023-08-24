@@ -1,0 +1,2 @@
+x=a+b;y=x/1;if(y==x)x=y;if(x==0||x<=-1||x>=1){print x,"\n";return}
+if(scale(x)>1&&x*10^length(x)%10==0){scale=1;y=x/1.0;x=y};if(x<0)print "-0",-x else print "0",x
