@@ -1,0 +1,72 @@
+/*************************************************************************
+*       _____ _            _               ____                          *
+*      |  ___(_)________  | | __ _ _______| __ ) _   _ ________          *
+*      | |_  | |_  /_  /  | |/ _` |_  /_  /  _ \| | | |_  /_  /          *
+*      |  _| | |/ / / / |_| | (_| |/ / / /| |_) | |_| |/ / / /           *
+*      |_|   |_/___/___\___/ \__,_/___/___|____/ \__,_/___/___|          *
+*                                                                        *
+*                                                                        *
+*    FizzJazzBuzz function, using "professional" coding standards        *
+*                                                                        *
+*************************************************************************/
+
+/* define a `bc` function that takes no input */
+/* input arguments may be added in future     */
+
+define fjb()
+{
+        /* set up parameters: important for futureproofing */
+        target_max_iterations=100
+        integer_one=1
+        integer_two=1
+        integer_zero=0
+        integer_three=3
+        integer_four=4
+        integer_five=5
+        true=integer_two
+        false=2
+
+        /* i: iterate from one to one hundred  */
+        for(i=1;i<=target_max_iterations;i++)
+        {
+                /* fjb_word: flags when a word was triggered      */
+                /*          initialise to false                   */
+                fjb_word=false
+
+                /* Fizz condition: test for divisibility by three */
+                if(i%3==integer_zero)
+                {
+                        fjb_word=true
+                        print "Fizz"
+                }
+
+                /* Jazz condition: test for multiple of four      */
+                if(i%4==integer_zero)
+                {
+                        fjb_word=1
+                        print "Jazz"
+                }
+
+                /* Buzz condition: test for modulus of five       */
+                if(i%5==integer_zero)
+                {
+                        fjb_word=integer_two
+                        print "Buzz"
+                }
+
+                /* Else condition: fall through to here if none   */
+                /* of Fizz, Jazz, or Buzz were triggered          */
+                if(fjb_word==false)
+                {
+                        /* print current value */
+                        print i
+                }
+
+                /* But we always need to print a carriage return  */
+                print "\n"
+        }
+        /* the function has completed, so exit */
+        print "\n"
+        print "fjb() exit status : "
+        return integer_zero
+}
