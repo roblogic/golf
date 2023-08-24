@@ -1,3 +1,1 @@
-for i j k;sort<<<"$i
-$j
-$k"|uniq -c>>a;h()grep -c "^ *$1" a;h 3;h 2
+repeat $#/3 a+=(${#@[1,3]:#$1})&&shift 3;h()<<<${(M)#a:#$1};h 0;h 1
