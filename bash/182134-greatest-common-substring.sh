@@ -1,4 +1,2 @@
-for l;{ d=${#l};for((;i++<d**2;)){ a="${l:i/d:1+i%d}" k=
-for n;{ [[ $n =~ $a ]]&&((k++));};((k-$#))||b+=("$a");};}
-for e in "${b[@]}";{((${#e}>${#f}))&&f=$e;}
-echo $f
+for l;{((f++));d=${#l};i=;for((;i++<d**2;)){ echo "${l:i/d:1+i%d}">>$f;};}
+for j in *;{((f++));grep -xf$j $[j+1]>$f;};egrep "^.{$(wc -L<$f)}$" $f
