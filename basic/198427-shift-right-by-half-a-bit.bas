@@ -1,0 +1,1 @@
+9?INT(N/SQR(2)):RETURN
