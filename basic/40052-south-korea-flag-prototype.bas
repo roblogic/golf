@@ -45,8 +45,10 @@ return
 
 'Rectangles are constructed from 11 line segments of width 2.
 'We first locate the diagonals using sin() and cos(). 
-'i j represent distance from centre. Then we add and subtract a fixed number 
-'of pixels (calculated on paper) from the diagonal to draw the line segments.
+'  i,j represent distance from centre. 
+'  x,y represent points along the diagonal.
+'We then add and subtract a fixed number of pixels (calculated on paper) 
+'from (x,y) to draw the line segments.
 sub s(c,f)  
     'draw little circles to show the location we begin from -- not in prod!
     graphics moveto 225+sin(c)*112,150+cos(c)*112 
