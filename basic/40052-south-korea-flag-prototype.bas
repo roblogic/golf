@@ -33,7 +33,7 @@ next
 'Rectangles, again we rotate around _C_.
 graphics color 0,0,0
 s(236.5,1):s(56.5,1)    '--upper left (236°) & lower right (56°) rectangles
-s(123.5,-1):s(303.5,-1) '--lower left (123°) & upper right (303°) rectangles
+s(123.5,-1):s(303.5,-1) '--upper right (123°) & lower left (303°) rectangles
 
 'Circles around the centre of the flag (225,150)
 sub p(a)
